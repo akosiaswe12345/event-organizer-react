@@ -1,7 +1,7 @@
 import { Text, SafeAreaView, StyleSheet, Image, TouchableOpacity, View} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 
-
-export default function SplashScreen() {
+export default function SplashScreen({navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.imgContainer}>
@@ -9,8 +9,8 @@ export default function SplashScreen() {
         <Text style={styles.textStylep1}>Get things done with Plan it Easy</Text>
         <Text style={styles.textStylep2}>Plant It Easy is an mobile application where you can find people who offers different services to organize your event.</Text>
       <View style={styles.btnContainer}>
-        <TouchableOpacity>
-          <Text style={{color: 'white', fontSize: '20px'}}>Get Started</Text>
+        <TouchableOpacity  onPress={() => navigation.navigate('Login')}>
+          <Text style={{color: 'white', fontSize: 20}}>Get Started</Text>
         </TouchableOpacity>
       </View>
       </View>
@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     flex: 1,
     // borderWidth: 1,
     // borderColor: 'red',
+    backgroundColor: '#5D5973',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
     // borderColor: 'red',
     color: '#FFFCC7',
     fontWeight: 'bold',
-    fontSize: '18px',
+    fontSize: 18,
     width: 290
   },
   textStylep2: {
@@ -49,7 +50,7 @@ const styles = StyleSheet.create({
     // borderColor: 'red',
     width: 290,
     color: 'white',
-    fontSize: '13px'
+    fontSize: 13,
   },
   btnContainer:{
     // borderWidth: 1,
