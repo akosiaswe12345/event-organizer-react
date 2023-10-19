@@ -6,6 +6,9 @@ import LogInScreen from './module/LogInScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import SignUpScreen from './module/SignUpScreen';
+import VerificationScreen from './module/VerificationScreen';
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {

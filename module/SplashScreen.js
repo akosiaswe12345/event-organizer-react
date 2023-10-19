@@ -1,7 +1,7 @@
 import { Text, SafeAreaView, StyleSheet, Image, TouchableOpacity, View} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
-export default function SplashScreen() {
+export default function SplashScreen({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.imgContainer}>
