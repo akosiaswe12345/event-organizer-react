@@ -12,8 +12,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Splash" component={SplashScreen} options={{headerShown: false}}/>
-        <Stack.Screen name="Login" component={LogInScreen} options={{headerShown: false}} />
+        <Stack.Screen name="Welcome" component={SplashScreen} options={{headerShown: false}}/>
+        <Stack.Screen name="Login" component={LogInScreen} options={{headerShown: false}}/>
+        <Stack.Screen name="Sign Up" component={SignUpScreen} options={{headerShown: false}}/>
+        <Stack.Screen name="Verification" component={VerificationScreen} options={{headerShown: false}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
